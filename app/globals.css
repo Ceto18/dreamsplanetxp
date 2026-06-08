@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme inline {
+  --font-heading: var(--font-playfair);
+  --font-sans: var(--font-inter), 'Inter Fallback';
+  --color-dark-main: #050505;
+  --color-dark-secondary: #0B0B0A;
+  --color-warm-white: #F5F1E8;
+  --color-muted-text: #B8B0A0;
+  --color-gold: #B17F40;
+}
+
+:root {
+  --dark-main: #050505;
+  --dark-secondary: #0B0B0A;
+  --warm-white: #F5F1E8;
+  --muted-text: #B8B0A0;
+  --gold: #B17F40;
+  --glass-dark: rgba(5, 5, 5, 0.72);
+}
+
+@layer base {
+  * {
+    @apply m-0 p-0 border-transparent outline-none;
+  }
+  
+  body {
+    @apply bg-dark-main text-warm-white overflow-x-hidden;
+  }
+  
+  html {
+    @apply font-sans scroll-smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-gold/20 rounded-lg;
+  }
+  
+  .gold-accent {
+    @apply text-gold;
+  }
+  
+  .btn-gold {
+    @apply px-6 py-3 bg-gold text-dark-main font-semibold rounded-lg hover:shadow-lg hover:shadow-gold/30 transition-all duration-300;
+  }
+  
+  .btn-outline-gold {
+    @apply px-6 py-3 border border-gold/50 text-warm-white rounded-lg hover:border-gold hover:bg-gold/10 transition-all duration-300;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-warm-white to-muted-text bg-clip-text text-transparent;
+  }
+  
+  .smooth-scroll {
+    @apply scroll-smooth;
+  }
+}
+
+@supports (background: oklch(1 0 0)) {
+  @layer utilities {
+    .animation-delay-100 {
+      animation-delay: 100ms;
+    }
+    .animation-delay-200 {
+      animation-delay: 200ms;
+    }
+    .animation-delay-300 {
+      animation-delay: 300ms;
+    }
+  }
+}
