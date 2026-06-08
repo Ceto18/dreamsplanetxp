@@ -41,7 +41,7 @@ const reviews = [
 export default function Resenas() {
   const [activeReview, setActiveReview] = useState(0)
   const [autoplay, setAutoplay] = useState(true)
-  const autoplayRef = useRef<NodeJS.Timeout>()
+  const autoplayRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   useEffect(() => {
     if (!autoplay) return
