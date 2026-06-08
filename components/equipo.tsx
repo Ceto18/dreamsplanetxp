@@ -29,7 +29,7 @@ const teamMembers: Record<string, TeamMember[]> = {
         {
             id: 2,
             name: 'Fatima Zara',
-            role: 'Coordinadora',
+            role: 'Coordinador',
             experience: '8 años',
             languages: ['Árabe', 'Francés', 'Inglés'],
             specialty: 'Cultura Marroquí',
@@ -56,7 +56,7 @@ const teamMembers: Record<string, TeamMember[]> = {
         {
             id: 5,
             name: 'Leila Tazi',
-            role: 'Colaboradora',
+            role: 'Colaborador',
             experience: '6 años',
             languages: ['Árabe', 'Francés', 'Inglés'],
             specialty: 'Gastronomía local',
@@ -74,7 +74,7 @@ const teamMembers: Record<string, TeamMember[]> = {
         {
             id: 7,
             name: 'Amira Ben',
-            role: 'Colaboradora',
+            role: 'Colaborador',
             experience: '5 años',
             languages: ['Árabe', 'Francés', 'Inglés'],
             specialty: 'Logística',
@@ -139,7 +139,7 @@ const teamMembers: Record<string, TeamMember[]> = {
         {
             id: 21,
             name: 'Hoa Nguyen',
-            role: 'Coordinadora',
+            role: 'Coordinador',
             experience: '9 años',
             languages: ['Vietnamita', 'Inglés'],
             specialty: 'Cruceros',
@@ -157,7 +157,7 @@ const teamMembers: Record<string, TeamMember[]> = {
         {
             id: 23,
             name: 'Trang Huynh',
-            role: 'Coordinadora',
+            role: 'Coordinador',
             experience: '8 años',
             languages: ['Vietnamita', 'Inglés', 'Francés'],
             specialty: 'Viajes rurales',
@@ -166,7 +166,7 @@ const teamMembers: Record<string, TeamMember[]> = {
         {
             id: 24,
             name: 'Vy Tran',
-            role: 'Colaboradora',
+            role: 'Colaborador',
             experience: '5 años',
             languages: ['Vietnamita', 'Inglés'],
             specialty: 'Comida local',
@@ -184,7 +184,7 @@ const teamMembers: Record<string, TeamMember[]> = {
         {
             id: 26,
             name: 'Nhu Pham',
-            role: 'Colaboradora',
+            role: 'Colaborador',
             experience: '4 años',
             languages: ['Vietnamita', 'Inglés'],
             specialty: 'Traducción',
