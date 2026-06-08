@@ -8,7 +8,7 @@ const destinations = ['Marruecos', 'Vietnam', 'Tailandia', 'Japón', 'Nepal', 'S
 interface TeamMember {
     id: number
     name: string
-    role: 'Coordinador' | 'Colaborador' | 'Influencer'
+    role: 'Coordinador' | 'Colaborador' | 'Influencer' | 'Coordinadora' | 'Colaboradora'
     experience: string
     languages: string[]
     specialty: string
